@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Repository class for entity {@link Group}.
@@ -36,6 +37,21 @@ public class GroupRepositoryImpl implements GroupRepository {
     @Override
     public Group update(final Group group) {
         throw new UnsupportedOperationException();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void delete(final Long id) {
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Optional<Group> findById(final Long id) {
+        return null;
     }
 
     /**
