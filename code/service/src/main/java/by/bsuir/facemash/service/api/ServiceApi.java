@@ -19,6 +19,13 @@ public interface ServiceApi<T> {
     T add(T object);
 
     /**
+     * This method get dto object by id.
+     *
+     * @param id value of the
+     */
+    T findById(Long id);
+
+    /**
      * This method get all dto objects.
      *
      * @return list of the dto objects

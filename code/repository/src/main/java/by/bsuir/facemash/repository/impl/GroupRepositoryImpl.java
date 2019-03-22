@@ -44,6 +44,7 @@ public class GroupRepositoryImpl implements GroupRepository {
      */
     @Override
     public void delete(final Long id) {
+
     }
 
     /**
@@ -51,7 +52,8 @@ public class GroupRepositoryImpl implements GroupRepository {
      */
     @Override
     public Optional<Group> findById(final Long id) {
-        return null;
+        Group group = entityManager.find(Group.class, id);
+        return group != null ? Optional.of(group) : Optional.empty();
     }
 
     /**

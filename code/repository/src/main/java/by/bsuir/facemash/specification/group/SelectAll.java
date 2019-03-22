@@ -16,7 +16,7 @@ import javax.persistence.criteria.Root;
  * @author Mikita_Ustsiushenka
  * @version 1.0
  */
-public class GroupSelectAll implements SqlSpecification {
+public class SelectAll implements SqlSpecification {
 
     private static final String FIELD_ACTIVE = "active";
 

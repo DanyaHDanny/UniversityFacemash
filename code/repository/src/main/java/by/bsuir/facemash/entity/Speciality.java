@@ -1,17 +1,19 @@
 package by.bsuir.facemash.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
- * Entity class that store info about study group.
+ * This entity class store info about speciality.
  *
  * @author Mikita_Ustsiushenka
  * @version 1.0
  */
 @Entity
-@Table(name = "study_group")
-public class Group {
+@Table(name = "speciality")
+public class Speciality {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,15 +26,22 @@ public class Group {
     private Boolean active;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "speciality_id", nullable = false)
-    private Speciality speciality;
+    @JoinColumn(name = "faculty_id", nullable = false)
+    private Faculty faculty;
+
+    @OneToMany(mappedBy = "speciality", fetch = FetchType.LAZY)
+    private List<Group> groups;
+
+    public Speciality() {
+        groups = new ArrayList<>();
+    }
 
     /**
      * {@inheritDoc}
      */
     @Override
     public String toString() {
-        return "Group{" +
+        return "Speciality{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", active=" + active +
@@ -45,18 +54,18 @@ public class Group {
     @Override
     public boolean equals(final Object object) {
         boolean result;
-        Group group;
+        Speciality speciality;
 
         if (object != null) {
-            group = (Group) object;
+            speciality = (Speciality) object;
             if (this == object) {
                 result = true;
             } else if (getClass() != object.getClass()) {
                 result = false;
             } else {
-                result = Objects.equals(id, group.id) &&
-                        Objects.equals(name, group.name) &&
-                        Objects.equals(active, group.active);
+                result = Objects.equals(id, speciality.id) &&
+                        Objects.equals(name, speciality.name) &&
+                        Objects.equals(active, speciality.active);
             }
         } else {
             result = false;
@@ -69,7 +78,6 @@ public class Group {
      */
     @Override
     public int hashCode() {
-
         return Objects.hash(id, name, active);
     }
 
@@ -97,12 +105,20 @@ public class Group {
         this.active = active;
     }
 
-    public Speciality getSpeciality() {
-        return speciality;
+    public Faculty getFaculty() {
+        return faculty;
     }
 
-    public void setSpeciality(final Speciality speciality) {
-        this.speciality = speciality;
+    public void setFaculty(final Faculty faculty) {
+        this.faculty = faculty;
+    }
+
+    public List<Group> getGroups() {
+        return groups;
+    }
+
+    public void setGroups(final List<Group> groups) {
+        this.groups = groups;
     }
 
 }
