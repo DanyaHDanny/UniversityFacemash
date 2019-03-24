@@ -30,10 +30,10 @@ CREATE TABLE IF NOT EXISTS speciality
 -- -----------------------------
 CREATE TABLE IF NOT EXISTS study_group
 (
-  id         BIGSERIAL PRIMARY KEY  NOT NULL,
-  name       CHARACTER VARYING(256) NOT NULL UNIQUE,
-  active     BOOLEAN                NOT NULL,
-  faculty_id BIGINT                 NOT NULL REFERENCES speciality (id) ON DELETE CASCADE ON UPDATE CASCADE
+  id            BIGSERIAL PRIMARY KEY  NOT NULL,
+  name          CHARACTER VARYING(256) NOT NULL UNIQUE,
+  active        BOOLEAN                NOT NULL,
+  speciality_id BIGINT                 NOT NULL REFERENCES speciality (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 -- --------------------------------
@@ -74,9 +74,9 @@ CREATE TABLE IF NOT EXISTS lab_comment
 -- -----------------------------
 CREATE TABLE IF NOT EXISTS estimate
 (
-  id    BIGSERIAL PRIMARY KEY NOT NULL,
-  value SMALLINT              NOT NULL,
-  date  TIMESTAMP             NOT NULL
+  id             BIGSERIAL PRIMARY KEY NOT NULL,
+  mark           SMALLINT              NOT NULL,
+  date_lab_work  TIMESTAMP             NOT NULL
 );
 
 -- -------------------------------

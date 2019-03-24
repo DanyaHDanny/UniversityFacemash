@@ -1,6 +1,6 @@
 package by.bsuir.facemash.entity;
 
-import by.bsuir.facemash.enumeration.UserRole;
+import by.bsuir.facemash.entity.enumeration.UserRole;
 
 import javax.persistence.*;
 import java.util.Objects;

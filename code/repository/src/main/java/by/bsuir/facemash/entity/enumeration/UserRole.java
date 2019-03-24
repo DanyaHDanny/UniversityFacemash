@@ -1,4 +1,4 @@
-package by.bsuir.facemash.enumeration;
+package by.bsuir.facemash.entity.enumeration;
 
 /**
  * Enumeration class for store user roles.
