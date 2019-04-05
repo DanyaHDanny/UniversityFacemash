@@ -64,26 +64,50 @@
 
 .student-short-info{
     display: flex;
+    margin-top: 3px;
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 .profile-photo img{
-    height: auto;
-    width: auto;
-    max-width: 300px;
-    max-height: 300px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
 
 .profile-photo{
-    border: 1px solid black;
+
 }
 
 .profile-info{
-    border: 1px solid black;
     width: 100%;
 }
 
 .profile-info p{
     margin-left: 10px;
     font-size: 18px;
+}
+
+.profile-skills{
+    justify-content: right;
+    width: 50%;
+}
+
+.profile-skills h6{
+    text-align: center;
+}
+
+.profile-skills-item{
+    justify-content: center;
+
+}
+
+.profile-skills-item li{
+    margin-top: 5px;
+}
+
+.profile-skills-item li a{
+    width: 120px;
+    text-align: center;
 }

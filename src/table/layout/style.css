@@ -1,0 +1,77 @@
+.footer{
+    display: flex;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer div{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    border: 1px solid gray;
+}
+
+.uf{
+    width: 10%;
+}
+
+.myProfile{
+    width: 30%;
+}
+
+.search{
+    width: 20%;
+}
+
+.subjects{
+    width: 40%;
+}
+
+.number-group{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.table {
+
+    border: 1px solid black;
+    width: 70%;
+}
+
+.subject-group{
+    text-align: center;
+    margin-top: 30px;
+}
+
+td, th {
+    text-align: center; /* Выравнивание по центру */
+    padding: 3px; /* Поля вокруг текста */
+}
+
+tr, td, th{
+    border: 1px solid black;
+}
+
+thead tr{
+    background: whitesmoke;
+}
+
+.content-table-comment{
+    display: flex;
+}
+
+.comments{
+    margin-top: 30px;
+    width: 30%;
+}
+
+.comments-text{
+    width: 80%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
