@@ -1,0 +1,89 @@
+.footer{
+    display: flex;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer div{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    border: 1px solid gray;
+}
+
+.uf{
+    width: 10%;
+}
+
+.myProfile{
+    width: 30%;
+}
+
+.search{
+    width: 20%;
+}
+
+.subjects{
+    width: 40%;
+}
+
+
+.search-input{
+    width: 90%;
+    margin: auto;
+}
+
+.content{
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.left-column{
+
+    width: 25%;
+    height: 400px;
+}
+
+.right-column{
+    height: 1000px;
+    width: 75%;
+}
+
+.dropdown button{
+    color: black;
+    background: white;
+    border: none;
+}
+
+.group-radio{
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+.student-short-info{
+    display: flex;
+    border: 1px solid black;
+}
+
+.profile-photo img{
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.profile-photo{
+    border: 1px solid black;
+}
+
+.profile-info{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.profile-info p{
+    margin-left: 10px;
+    font-size: 18px;
+}

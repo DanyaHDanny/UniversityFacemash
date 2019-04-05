@@ -1,0 +1,70 @@
+.footer{
+    display: flex;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer div{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    border: 1px solid gray;
+}
+
+.main-info{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.uf{
+    width: 10%;
+}
+
+.myProfile{
+    width: 30%;
+}
+
+.search{
+    width: 20%;
+}
+
+.subjects{
+    width: 40%;
+}
+
+.profile-photo img{
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 5%;
+}
+
+.profile-photo{
+    width: 35%;
+    text-align: center;
+}
+
+.profile-info{
+    width: 65%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.about-student{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.about-student-content{
+    border: 2px solid black;
+}
+
+.about-student-content p{
+    font-size: 18px;
+    padding: 5px;
+}
