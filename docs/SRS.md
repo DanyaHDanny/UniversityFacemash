@@ -49,22 +49,22 @@
 ### Интерфейс пользователя
 
 - Страница авторизации Web-приложения <br>
- ![AuthorizationPage](Mockups/Sign In Page/Sign In.png)
+ ![AuthorizationPage](Mockups/Sign_In_Page/Sign_In.png)
 
 - Страницп таблицы с оценками <br>
- ![AssessmentTablePage](Mockups/Sign In Page/Table.png)
+ ![AssessmentTablePage](Mockups/Sign_In_Page/Table.png)
   
  - Персональная страница 
- ![PersonalePage](Mockups/Sign In Page/Profile.png)
+ ![PersonalePage](Mockups/Sign_In_Page/Profile.png)
 
  - Таблица с предметами студента
- ![TableThingStudent](Mockups/Sign In Page/Objects for Student.png)
+ ![TableThingStudent](Mockups/Sign_In_Page/Objects_for_Student.png)
 
  - Таблица с предметами и группами преподавателя 
- ![TableThingTeacher](Mockups/Sign In Page/Objects for Teachers.png)
+ ![TableThingTeacher](Mockups/Sign_In_Page/Objects_for_Teachers.png)
 
  - Страница поиска 
- ![Search](Mockups/Sign In Page/Founder.png)
+ ![Search](Mockups/Sign_In_Page/Founder.png)
 
 
 ### Характеристики пользователей
