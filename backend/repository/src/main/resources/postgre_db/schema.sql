@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS study_group
 (
   id            BIGSERIAL PRIMARY KEY  NOT NULL,
   name          CHARACTER VARYING(256) NOT NULL UNIQUE,
+  course        SMALLINT               NOT NULL,
   active        BOOLEAN                NOT NULL,
   speciality_id BIGINT                 NOT NULL REFERENCES speciality (id) ON DELETE CASCADE ON UPDATE CASCADE
 );

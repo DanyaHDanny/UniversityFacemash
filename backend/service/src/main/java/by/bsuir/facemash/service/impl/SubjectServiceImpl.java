@@ -6,8 +6,8 @@ import by.bsuir.facemash.exception.EntityAlreadyExistException;
 import by.bsuir.facemash.repository.SubjectRepository;
 import by.bsuir.facemash.repository.impl.SubjectRepositoryImpl;
 import by.bsuir.facemash.service.SubjectService;
-import by.bsuir.facemash.specification.subject.SelectAll;
-import by.bsuir.facemash.specification.subject.SelectByName;
+import by.bsuir.facemash.specification.subject.SubjectSelectAll;
+import by.bsuir.facemash.specification.subject.SubjectSelectByName;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -102,7 +102,7 @@ public class SubjectServiceImpl implements SubjectService {
     @Transactional(readOnly = true)
     public List<SubjectDto> findAll() {
         logger.info("Method findAll() from SubjectServiceImpl call.");
-        return subjectRepository.query(new SelectAll())
+        return subjectRepository.query(new SubjectSelectAll())
                 .stream()
                 .map(subject -> modelMapper.map(subject, SubjectDto.class))
                 .collect(Collectors.toList());
@@ -115,7 +115,7 @@ public class SubjectServiceImpl implements SubjectService {
     @Transactional(readOnly = true)
     public List<SubjectDto> findByName(final String name) {
         logger.info("Method findByName(String) from SubjectServiceImpl call.");
-        return subjectRepository.query(new SelectByName(name))
+        return subjectRepository.query(new SubjectSelectByName(name))
                 .stream()
                 .map(subject -> modelMapper.map(subject, SubjectDto.class))
                 .collect(Collectors.toList());

@@ -20,6 +20,9 @@ public class Group {
     @Column(name = "name", nullable = false, unique = true)
     private String name;
 
+    @Column(name = "course", nullable = false)
+    private Short course;
+
     @Column(name = "active", nullable = false)
     private Boolean active;
 
@@ -35,6 +38,7 @@ public class Group {
         return "Group{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", course=" + course +
                 ", active=" + active +
                 '}';
     }
@@ -56,6 +60,7 @@ public class Group {
             } else {
                 result = Objects.equals(id, group.id) &&
                         Objects.equals(name, group.name) &&
+                        Objects.equals(course, group.course) &&
                         Objects.equals(active, group.active);
             }
         } else {
@@ -69,8 +74,7 @@ public class Group {
      */
     @Override
     public int hashCode() {
-
-        return Objects.hash(id, name, active);
+        return Objects.hash(id, name, course, active);
     }
 
     public Long getId() {
@@ -87,6 +91,14 @@ public class Group {
 
     public void setName(final String name) {
         this.name = name;
+    }
+
+    public Short getCourse() {
+        return course;
+    }
+
+    public void setCourse(final Short course) {
+        this.course = course;
     }
 
     public Boolean getActive() {
