@@ -26,7 +26,7 @@ public class Estimate {
 
     @Override
     public String toString() {
-        return "Estimate{" +
+        return "estimate{" +
                 "id=" + id +
                 ", mark=" + mark +
                 ", dateOfLabWork=" + dateOfLabWork +
