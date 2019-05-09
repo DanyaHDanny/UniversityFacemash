@@ -21,3 +21,10 @@ Web-приложение *“University Facemash”* - система оцени
 3. HTML5</br>
 4. JavaScript (JQuery, AngularJS)</br>
 5. Oracle DB 11xe</br>
+
+# Содержание
+1. [Требования к проекту](docs/SRS.md)  
+2. [Проект системы](docs/Diagramms/README.md)    
+3. [Тестирование](testing)  
+3.1. [План тестирования](testing/TestPlan.md)   
+3.2. [Представление результатов](testing/TestResult.md)
