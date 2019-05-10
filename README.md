@@ -28,3 +28,6 @@ Web-приложение *“University Facemash”* - система оцени
 3. [Тестирование](testing)  
 3.1. [План тестирования](testing/TestPlan.md)   
 3.2. [Представление результатов](testing/TestResult.md)
+4. [Исследование архитектурного решения](https://github.com/DanyaHDanny/UniversityFacemash/blob/master/docs/Architecture.md) <br>
+5. [Технический долг](https://github.com/DanyaHDanny/UniversityFacemash/blob/master/docs/TechnicalDebt/TechnicalDebt.md) <br>
+6. [Улучшение UX](https://github.com/DanyaHDanny/UniversityFacemash/blob/master/docs/UxUpgraiding.md) <br>
