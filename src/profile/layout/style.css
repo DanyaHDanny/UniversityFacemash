@@ -12,11 +12,21 @@
     border: 1px solid gray;
 }
 
-.main-info{
+.main-info {
     display: flex;
     width: 90%;
     margin: 0 auto;
     margin-top: 2%;
+}
+
+.menu-option:hover {
+    color:  #fff;
+    background-color: #007BFF;
+    cursor: pointer;
+}
+
+h5 {
+    
 }
 
 .uf{
