@@ -15,7 +15,7 @@
 
 4. **Защита от ошибок  пользователя**
 
-В приложении реализована еще не добавлена валидация для полей пароля и логина при авторизации. Это будет сделано в финальной части разработки проекта
+В приложении реализована валидация для полей пароля и логина при авторизации.
 
 5. **Эстетика  GUI**
 
@@ -51,4 +51,4 @@ GUI приложения выполнен в достаточно простом
 
 #### После
 
-![](https://github.com/amidovitch/SemCycle/blob/master/documentation/Screenshots/search_after.png)
+![](https://github.com/DanyaHDanny/UniversityFacemash/blob/master/docs/Screenshots/search_after.png)
